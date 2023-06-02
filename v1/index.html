@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="py-3 main-theme text-light shadow-lg">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+                <img class="logo" src="logo.png">
+            </div>
+            <div class="col-md-4">
+              <form class="form-inline">
+                <div class="input-group">
+                  <input class="form-control main-search-input" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                  <button class="btn btn-outline-light btn-icon" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-2 text-right">
+              <a href="#" class="btn btn-outline-light"><i class="fas fa-shopping-cart"></i> Meu Carrinho</a>
+            </div>
+          </div>
+        </div>
+    </header>
+    <!-- Carrosel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-45">
+            <div class="carousel-item active h-45">
+              <img src="https://assets.wpsandwatch.com/storage/images/_aliases/KA_compressed/1/6/4/2/15582461-10-eng-GB/9ab619276da6-hp-hero-banner-video_kitchenaid-flash-sale-2023.jpg" class="d-block w-100" alt="First slide">
+              <div class="position-absolute grey-box p-3 ms-20 top-50 start-0 translate-middle-y align-items-center">
+                <h2>Conheça nossos maravilhosos produtos</h2>
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nunc vel odio malesuada ultricies. Integer euismod fermentum purus, at euismod sapien venenatis sit amet. Proin euismod lorem ac dolor fringilla auctor.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-45">
+                <img src="https://assets.wpsandwatch.com/storage/images/_aliases/KA_compressed/1/5/1/7/17837151-1-eng-GB/521405b73153-mixers-tilt-head-4.7l-artisan-exclusive-video-showing-the-mixer-in-use.jpg" class="d-block w-100" alt="Second slide">
+                <div class="position-absolute grey-box p-3 ms-20 top-50 start-0 translate-middle-y align-items-center">
+                    <h2>Nossa nova batedeira de ultima geração!</h2>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nunc vel odio malesuada ultricies. Integer euismod fermentum purus, at euismod sapien venenatis sit amet. Proin euismod lorem ac dolor fringilla auctor.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-45">
+                <img src="https://kitchenaid2.vtexassets.com/assets/vtex.file-manager-graphql/images/df935241-0820-44a0-b847-fa9e95ee22fd___8ce488a209f7edfa61f4a03c1fdb8894.png" class="d-block w-100" alt="Third slide">
+                <div class="position-absolute grey-box p-3 ms-20 top-50 start-0 translate-middle-y align-items-center">
+                    <h2>Faça as melhores vitaminas com Artisian</h2>
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nunc vel odio malesuada ultricies. Integer euismod fermentum purus, at euismod sapien venenatis sit amet. Proin euismod lorem ac dolor fringilla auctor.</p>
+                </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Destaque -->
+    <div class="pt-4 pb-5 main-theme">
+        <div class="container">
+            <h2 class="text-center mb-4 text-light">Produtos em Destaque</h2>
+    
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="featured-item row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                            <!-- Item 1 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164026-220-220?v=637520286832000000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mixer</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 499,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164380-220-220?v=637680203738630000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Batedeira</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 1999,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/162934-220-220?v=637439201719800000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Liquidificador</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 1899,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/166905-220-220?v=637944619535470000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Processador</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 399,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="featured-item row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                            <!-- Item 5 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/166915-220-220?v=637957621565900000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Batedeira rustica</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 2199,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 6 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164756-220-220?v=637769126266070000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Acessorio para pão</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 699,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 7 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164835-220-220?v=637793230390600000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Batedeira moderna</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 2099,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 8 -->
+                            <div class="col">
+                                <div class="card h-100">
+                                    <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/166876-220-220?v=637939239264100000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Rolos para massa</h5>
+                                        <p class="card-text">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star-half-alt checked"></span>
+                                        (2)
+                                        </p>
+                                        <p class="card-text"><b>R$ 599,00</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev custom-carousel-btn" href="#carouselExample" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+    
+                <a class="carousel-control-next custom-carousel-btn" href="#carouselExample" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- lista de produtos, filtros e newsletter -->
+    <div class="container mt-4">
+        
+        <div class="row">
+            <div class="col-md-3 mh-4">
+                <!-- Box de filtros -->
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Filtros</h5>
+                        <div class="form-group mt-3">
+                            <label for="categoria">Categoria</label>
+                            <select class="form-control" id="categoria">
+                                <option>Todas</option>
+                                <option>Carros</option>
+                                <option>Motos</option>
+                                <option>Caminhões</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="marca">Marca</label>
+                            <select class="form-control" id="marca">
+                                <option>Todas</option>
+                                <option>Ford</option>
+                                <option>Chevrolet</option>
+                                <option>Volkswagen</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="preco_min">Preço mínimo</label>
+                            <input type="number" class="form-control" id="preco_min" placeholder="R$">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="preco_max">Preço máximo</label>
+                            <input type="number" class="form-control" id="preco_max" placeholder="R$">
+                        </div>
+                        <button class="btn btn-primary mt-3 w-100 button-theme">
+                            <i class="fas fa-search ms-2"></i> Pesquisar 
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card mt-4 mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Newsletter</h5>
+                        <div class="form-group mt-3">
+                            <input type="email" class="form-control" id="email" placeholder="Insira seu email">
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3 w-100">Inscrever-se</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-9">
+                <div class="row row-cols-1 row-cols-sm-3 g-4">
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164380-220-220?v=637680203738630000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Batedeira</h5>
+                            <p class="card-text">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star-half-alt checked"></span>
+                              (2)
+                            </p>
+                            <p class="card-text"><b>R$ 1999,00</b></p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/166915-220-220?v=637957621565900000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Batedeira Rustica</h5>
+                            <p class="card-text">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-alt checked"></span>
+                                (2)
+                            </p>
+                            <p class="card-text"><b>R$ 2199,00</b></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top">
+                                <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164835-220-220?v=637793230390600000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Batedeira Moderna</h5>
+                                <p class="card-text">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-alt checked"></span>
+                                    (2)
+                                </p>
+                                <p class="card-text"><b>R$ 2099,00</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-sm-3 g-4">
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/166876-220-220?v=637939239264100000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Rolos para massa</h5>
+                                <p class="card-text">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-alt checked"></span>
+                                    (2)
+                                </p>
+                                <p class="card-text"><b>R$ 599,00</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-top">
+                                        <img src="https://kitchenaid.vtexassets.com/arquivos/ids/155894-220-220?v=635678818160970000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                    </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Batedor com borda flexivel</h5>
+                                <p class="card-text">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-alt checked"></span>
+                                    (2)
+                                </p>
+                                <p class="card-text"><b>R$ 279,00</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                        <div class="card-img-top">
+                                    <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164756-220-220?v=637769126266070000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Acessorio para pão</h5>
+                            <p class="card-text">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-alt checked"></span>
+                                (2)
+                            </p>
+                            <p class="card-text"><b>R$ 699,00</b></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row row-cols-1 row-cols-sm-3 g-4">
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                        <div class="card-img-top">
+                                    <img src="https://kitchenaid.vtexassets.com/arquivos/ids/162934-220-220?v=637439201719800000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Liquidificador Artisian</h5>
+                            <p class="card-text">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-alt checked"></span>
+                                (2)
+                            </p>
+                            <p class="card-text"><b>R$ 1999,00</b></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                        <div class="card-img-top">
+                                    <img src="https://kitchenaid.vtexassets.com/arquivos/ids/166905-220-220?v=637944619535470000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Processador</h5>
+                            <p class="card-text">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-alt checked"></span>
+                                (2)
+                            </p>
+                            <p class="card-text"><b>R$ 399,00</b></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col col-sm-4 mt-4 mb-4">
+                        <div class="card h-100">
+                        <div class="card-img-top">
+                                    <img src="https://kitchenaid.vtexassets.com/arquivos/ids/164026-220-220?v=637520286832000000&width=220&height=220&aspect=true" alt="Imagem do Produto">
+                                </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mixer</h5>
+                            <p class="card-text">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star-half-alt checked"></span>
+                                (2)
+                            </p>
+                            <p class="card-text"><b>R$ 119,00</b></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+              
+        </div>
+          
+    </div>
+    <!-- footer -->
+    <footer class="pt-4 main-theme text-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+                <h5 class="mb-4">Meios de Pagamento</h5>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-cc-visa payment-icons"></i></li>
+                            <li><i class="fab fa-cc-mastercard payment-icons"></i></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-cc-amex payment-icons"></i></li>
+                            <li><i class="fab fa-cc-discover payment-icons"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-cc-diners-club payment-icons"></i></li>
+                            <li><i class="fab fa-cc-discover payment-icons"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <h5 class="mb-4">Links Rápidos</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Políticas de Envio</a></li>
+                <li><a href="#">Cancelamento</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Políticas de Privacidade</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Redes Sociais</h5>
+                <ul class="list-inline">
+                    <li class="list-inline-item mt-3"><a href="#"><i class="fab fa-twitter social-icons"></i></a></li>
+                    <li class="list-inline-item mt-3"><a href="#"><i class="fab fa-facebook-f social-icons"></i></a></li>
+                    <li class="list-inline-item mt-3"><a href="#"><i class="fab fa-google-plus-g social-icons"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+              <h5 class="mb-4">Contato</h5>
+              <ul class="list-unstyled">
+                <li><i class="fas fa-map-marker-alt"></i> <b>CEP:</b> 00000-000</li>
+                <li><i class="fas fa-map-marker-alt"></i> <b>Rua:</b> Exemplo, 123</li>
+                <li><i class="fas fa-envelope"></i> <b>E-mail:</b> contato@exemplo.com</li>
+                <li><i class="fas fa-phone"></i> <b>Telefone:</b> (00) 0000-0000</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

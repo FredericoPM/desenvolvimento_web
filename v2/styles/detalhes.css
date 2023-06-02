@@ -1,0 +1,69 @@
+h2,
+h5 {
+    font-weight: 600;
+}
+
+a {
+    color: #F2EEED;
+}
+
+body,
+.main-search-input {
+    color: #F2EEED;
+    background-color: #F2EEED;
+    font-family: 'Dosis', sans-serif;
+}
+
+.logo {
+    width: 250px;
+}
+
+.rate {
+    color: #FFEA2E;
+    font-size: 24px;
+}
+
+.rate-text {
+    color: grey;
+}
+
+.h-45 {
+    max-height: 48vw;
+}
+
+.featured-item {
+    margin: 0 30px;
+}
+
+.payment-icons {
+    font-size: 3em;
+}
+
+.social-icons {
+    font-size: 3em;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+    margin-right: 20px;
+}
+
+.main-theme {
+    background-color: #1F3D54;
+}
+
+#details {
+    color: #0F1E29;
+    max-height: 88vh;
+}
+
+.product-img {
+    max-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img img {
+    max-height: 100%;
+}

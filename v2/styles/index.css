@@ -1,0 +1,120 @@
+h2,
+h5 {
+    font-weight: 600;
+}
+
+a {
+    color: #F2EEED;
+}
+
+body,
+.main-search-input {
+    color: #F2EEED;
+    background-color: #F2EEED;
+    font-family: 'Dosis', sans-serif;
+}
+
+.logo {
+    width: 250px;
+}
+
+.checked {
+    color: #FFEA2E;
+    font-size: 12px;
+}
+
+.unchecked {
+    color: #FFEA2E;
+    font-size: 12px;
+}
+
+.h-45 {
+    max-height: 48vw;
+}
+
+.custom-carousel-btn {
+    width: 30px;
+    color: white;
+}
+
+.featured-item {
+    margin: 0 30px;
+}
+
+.payment-icons {
+    font-size: 3em;
+}
+
+.social-icons {
+    font-size: 3em;
+}
+
+.fa-facebook-f,
+.fa-twitter {
+    margin-right: 20px;
+}
+
+.main-theme {
+    background-color: #1F3D54;
+}
+
+.btn-primary {
+    --bs-btn-color: #F2EEED;
+    --bs-btn-bg: #5AB1F2;
+    --bs-btn-border-color: #5AB1F2;
+    --bs-btn-hover-color: #F2EEED;
+    --bs-btn-hover-bg: #478BBF;
+    --bs-btn-hover-border-color: #478BBF;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #F2EEED;
+    --bs-btn-active-bg: #478BBF;
+    --bs-btn-active-border-color: #478BBF;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #F2EEED;
+    --bs-btn-disabled-bg: #5AB1F2;
+    --bs-btn-disabled-border-color: #5AB1F2;
+}
+
+.btn-outline-light {
+    --bs-btn-color: #F2EEED;
+    --bs-btn-border-color: #F2EEED;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #F2EEED;
+    --bs-btn-hover-border-color: #F2EEED;
+    --bs-btn-focus-shadow-rgb: 248, 249, 250;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #F2EEED;
+    --bs-btn-active-border-color: #F2EEED;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #F2EEED;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #F2EEED;
+    --bs-gradient: none;
+}
+
+.card {
+    color: #0F1E29;
+}
+
+.grey-box {
+    background-color: rgba(128, 128, 128, 0.8);
+    margin-left: 10%;
+    max-width: 20%;
+    min-height: 25%;
+}
+
+.card-img-top {
+    border-bottom: 2px solid #F2EEED;
+    min-height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.card-img {
+    max-height: 220px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
